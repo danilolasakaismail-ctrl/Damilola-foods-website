@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter,  } from "react-router-dom";
 import HomePageLayout from "../layout/HomePageLayout";
 import HomeComp from "../pages/Homepage/HompComp";
 import ContactpageLayout from "../layout/ContactpageLayout";
@@ -27,9 +27,8 @@ export const element =createBrowserRouter([
         ]
 
     },
-])
+],
+{
+    basename: "/Damilola-foods-website",
+ })
 
-export default function App() {
-  // 2. Pass it directly into the router prop
-  return <RouterProvider router={element} />;
-}
